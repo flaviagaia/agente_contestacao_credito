@@ -11,6 +11,10 @@ O agente responde perguntas como:
 - quais documentos sustentam melhor o caso?
 - a resposta anterior foi superficial?
 
+## Interface
+
+![Interface do agente de contestação](assets/contestacao.jpg)
+
 ## Arquitetura
 
 ```mermaid
@@ -261,6 +265,10 @@ No caso `DISP-1002`:
 # English Version
 
 `Agente Contestacao Credito` is an `OpenAI Agents SDK` MVP for customer-facing credit dispute handling.
+
+## Interface
+
+![Credit dispute agent interface](assets/contestacao.jpg)
 
 The project demonstrates:
 
