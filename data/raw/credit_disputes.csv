@@ -1,0 +1,4 @@
+case_id,customer_name,credit_event_type,disputed_reason,amount_brl,days_past_due,score_impact_points,supporting_documents,status,issuer_response_history
+DISP-1001,Ana Souza,late_payment,"Cliente informa que a fatura foi quitada antes do vencimento, mas o atraso foi registrado.",820.0,0,18,"comprovante_pagamento, extrato_bancario",under_review,Sem resposta formal ainda.
+DISP-1002,Bruno Lima,negative_record,"Cliente alega que a dívida já foi renegociada e quitada, mas a negativação continua ativa.",3400.0,0,52,"termo_quitacao, comprovante_transferencia",under_review,Atendimento anterior respondeu genericamente sem revisar os anexos.
+DISP-1003,Carla Mendes,hard_inquiry,Cliente não reconhece consulta ao crédito feita por instituição com a qual afirma não ter relação.,0.0,0,11,"declaracao_cliente, print_app_credito",under_review,Há apenas protocolo de abertura.
