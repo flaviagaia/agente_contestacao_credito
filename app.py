@@ -4,6 +4,7 @@ import streamlit as st
 
 from src.agent import ask_dispute_agent
 from src.sample_data import load_disputes
+from src.tools import EVENT_TYPE_LABELS, STATUS_LABELS
 
 
 st.set_page_config(page_title="Agente de Contestação de Crédito", page_icon="📄", layout="wide")
@@ -26,6 +27,11 @@ with st.sidebar:
     run_button = st.button("Consultar agente")
 
 selected_profile = cases.loc[cases["case_id"] == selected_case].iloc[0].to_dict()
+selected_profile["credit_event_type"] = EVENT_TYPE_LABELS.get(
+    selected_profile["credit_event_type"],
+    selected_profile["credit_event_type"],
+)
+selected_profile["status"] = STATUS_LABELS.get(selected_profile["status"], selected_profile["status"])
 
 metrics = st.columns(4)
 metrics[0].metric("Cliente", selected_profile["customer_name"])
