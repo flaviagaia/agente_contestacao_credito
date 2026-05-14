@@ -89,15 +89,15 @@ Isso simplifica a integração com front-end, logging e avaliação posterior.
 
 ## Estrutura do Projeto
 
-- [src/agent.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/agente_contestacao_credito/src/agent.py)
+- [src/agent.py](src/agent.py)
   - criação do agente e fallback.
-- [src/tools.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/agente_contestacao_credito/src/tools.py)
+- [src/tools.py](src/tools.py)
   - funções de domínio usadas pelo agente.
-- [src/sample_data.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/agente_contestacao_credito/src/sample_data.py)
+- [src/sample_data.py](src/sample_data.py)
   - base demo de casos contestados.
-- [app.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/agente_contestacao_credito/app.py)
+- [app.py](app.py)
   - interface em Streamlit.
-- [tests/test_agent.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/agente_contestacao_credito/tests/test_agent.py)
+- [tests/test_agent.py](tests/test_agent.py)
   - testes da camada principal.
 
 ## Ferramentas do Agente
@@ -195,7 +195,7 @@ O objetivo aqui é fornecer:
 
 ## Interface Streamlit
 
-O app em [app.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/agente_contestacao_credito/app.py) funciona como `inspection console` do agente:
+O app em [app.py](app.py) funciona como `inspection console` do agente:
 
 - seleção do caso;
 - entrada da pergunta do cliente;
@@ -208,7 +208,7 @@ Isso ajuda a equipe técnica a auditar o comportamento do fluxo sem depender só
 
 ## Validação
 
-Os testes em [tests/test_agent.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/agente_contestacao_credito/tests/test_agent.py) cobrem:
+Os testes em [tests/test_agent.py](tests/test_agent.py) cobrem:
 
 - retorno mínimo do fallback;
 - presença de avaliação de força da contestação;
